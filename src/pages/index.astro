@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Directives from '../components/vue/Directives.vue';
 import Counter from '../components/vue/Counter.vue';
+import TODO from '../components/vue/TODO.vue';
 ---
 
-<Layout title="Welcome to Astro.">
-	<Counter client:load/>
+<Layout title="Welcome to VUE.JS">
+	<!-- LLAMADO DEL COMPONENTE DE VUE : CONTADOR DE CLICKS -->
+	<!-- <Counter client:load/> -->
+	<!-- LLAMADO DEL COMPONENTE DE VUE : DIRECTIVAS -->
+	<!-- <Directives client:load/> -->
+	<TODO client:load/>
 </Layout>
 
